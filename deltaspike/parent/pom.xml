@@ -67,7 +67,7 @@
         <!-- Faces implementations -->
         <myfaces.version>4.0.2</myfaces.version>
 
-        <tomcat.version>10.1.13</tomcat.version>
+        <tomcat.version>10.1.47</tomcat.version>
 
         <!-- used for some bytecode proxy stuff. Shaded in -->
         <asm.version>9.6</asm.version>
@@ -94,8 +94,8 @@
         <deltaspike.osgi.import.defaults>
             org.springframework.*;version="[3,4)",
         </deltaspike.osgi.import.defaults>
-        <deltaspike.osgi.import.before.defaults />
-        <deltaspike.osgi.import.additional />
+        <deltaspike.osgi.import.before.defaults/>
+        <deltaspike.osgi.import.additional/>
         <deltaspike.osgi.import.pkg>
             !${deltaspike.osgi.export.pkg},
             org.apache.deltaspike.*;${deltaspike.osgi.import.deltaspike.version},
@@ -104,19 +104,19 @@
             ${deltaspike.osgi.import.additional},
             *
         </deltaspike.osgi.import.pkg>
-        <deltaspike.osgi.activator />
+        <deltaspike.osgi.activator/>
         <deltaspike.osgi.failok>false</deltaspike.osgi.failok>
         <deltaspike.osgi.private.pkg>!*</deltaspike.osgi.private.pkg>
         <deltaspike.osgi.export>${deltaspike.osgi.export.pkg};${deltaspike.osgi.version}</deltaspike.osgi.export>
         <deltaspike.osgi.version>version=${project.version}</deltaspike.osgi.version>
         <deltaspike.osgi.split.pkg>-split-package:=first</deltaspike.osgi.split.pkg>
         <deltaspike.osgi.import>${deltaspike.osgi.import.pkg}</deltaspike.osgi.import>
-        <deltaspike.osgi.dynamic />
+        <deltaspike.osgi.dynamic/>
         <deltaspike.osgi.symbolic.name>${project.groupId}.${project.artifactId}</deltaspike.osgi.symbolic.name>
         <deltaspike.osgi.exclude.dependencies>false</deltaspike.osgi.exclude.dependencies>
-        <deltaspike.osgi.provide.capability />
-        <deltaspike.osgi.require.capability />
-        <cdi.osgi.beans-managed />
+        <deltaspike.osgi.provide.capability/>
+        <deltaspike.osgi.require.capability/>
+        <cdi.osgi.beans-managed/>
 
 
         <jakarta.atinject-api.version>2.0.0</jakarta.atinject-api.version>
@@ -574,8 +574,8 @@
                             <target>
                                 <copy todir="${project.build.directory}/apidocs/META-INF">
                                     <fileset dir="${basedir}">
-                                        <include name="LICENSE.txt" />
-                                        <include name="NOTICE.txt" />
+                                        <include name="LICENSE.txt"/>
+                                        <include name="NOTICE.txt"/>
                                     </fileset>
                                 </copy>
                             </target>
@@ -591,7 +591,7 @@
                             <target>
                                 <!-- Copy javadoc to another directory, to keep javadoc of previous versions on site -->
                                 <copy todir="${project.build.directory}/site/apidocs-${project.version}" failonerror="false">
-                                    <fileset dir="${project.build.directory}/site/apidocs" />
+                                    <fileset dir="${project.build.directory}/site/apidocs"/>
                                 </copy>
                             </target>
                         </configuration>
